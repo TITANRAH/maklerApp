@@ -1,0 +1,42 @@
+#slide1{
+    background-image: url('/assets/background/fondoVolcom2.jpg');
+    
+}
+
+#slide2{
+    background-image: url('/assets/background/fondoVolcom1.jpg');
+}
+
+#botonLogin:hover{
+    background-color:rgb(233, 229, 229);
+    border-radius: 50px;
+   
+}
+
+.no-scroll{
+    overflow-y: hidden;
+}
+
+.mainSlide img{
+    width: 80%;
+   margin: 0 0 0em 0;
+    
+}
+.mainSlide, .mainSlide ion-slide {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    width: 120px;
+}
+
+.pick-avatar {
+    width: 80px;
+    opacity: 0.3;
+}
+
+.pick-avatar-seleccionado {
+    transition: opacity 0.5s linear;
+    opacity: 1 !important;
+}
