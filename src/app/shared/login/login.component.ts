@@ -1,6 +1,7 @@
 import { Component, ComponentFactoryResolver, OnInit, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+
 import { IonSlides } from '@ionic/angular';
+import { LocalStorageUsuarioService, UsuarioI } from '../../services/local-storage-usuario.service';
 
 @Component({
   selector: 'app-login',
@@ -12,16 +13,22 @@ export class LoginComponent implements OnInit {
   // llamamos al slide prncipal y le damos un nombre aca
   @ViewChild('slidePrincipal', {static: true}) slides: IonSlides;//esto neceitams para impedir el movimiento manual del slide
 
-  constructor() { }
+  password;
+  correo;
+
+  paciente: UsuarioI;
+
+  constructor(private localStorageUsuarioService: LocalStorageUsuarioService) { }
 
   ngOnInit() {
 
     this.slides.lockSwipes(true);//tambien hay que usar esto para impedir el movimeinto del slide principal
   }
 
-  login(fLogin: NgForm){
+  async signIn(){
+    this.localStorageUsuarioService.cargarUsuario(this.password, this.correo)
 
-    console.log(fLogin.valid) //veo si el formulario es valido
+    console.log('hizo click')
   }
 
   registro(fRegistro){
