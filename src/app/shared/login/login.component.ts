@@ -2,6 +2,7 @@ import { Component, ComponentFactoryResolver, OnInit, ViewChild } from '@angular
 
 import { IonSlides } from '@ionic/angular';
 import { LocalStorageUsuarioService, UsuarioI } from '../../services/local-storage-usuario.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -18,7 +19,8 @@ export class LoginComponent implements OnInit {
 
   paciente: UsuarioI;
 
-  constructor(private localStorageUsuarioService: LocalStorageUsuarioService) { }
+  constructor(private localStorageUsuarioService: LocalStorageUsuarioService,
+              private router: Router) { }
 
   ngOnInit() {
 
@@ -27,6 +29,8 @@ export class LoginComponent implements OnInit {
 
   async signIn(){
     this.localStorageUsuarioService.cargarUsuario(this.password, this.correo)
+
+    this.router.navigate(['pages/gestor'])
 
     console.log('hizo click')
   }

@@ -1,0 +1,243 @@
+
+
+
+<title>MAKLER</title>
+
+<body class="theme-blue ls-toggle-menu">
+
+    <ion-content>
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+
+    <nav class="navbar p-l-5 p-r-5 ">
+        <ul class="nav navbar-nav navbar-left">
+            <li>
+                <div class="navbar-header my-auto">
+                    <a href="#" class="bars"></a>
+                    <a class="navbar-brand ">
+                        <img src="./assets/image/tituloMAKLER.png" class="" width="100" />
+                    </a>
+                </div>
+            </li>
+            <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="fas fa-bars text-makler"></i> <span class="ml-4" >HOLA CRISTOPHER NICOLÁS PINO BARRA</span></a></li>
+
+            <li class="float-right">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=+56984481396&text=Hola, necesito ayuda con Proki." class="text-success">¿NECESITAS AYUDA?  <i class="ml-1 fab fa-whatsapp"></i></a>
+                <a asp-controller="Account" asp-action="Logout" class="mega-menu" data-close="true"><i class="fas fa-power-off"></i></a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Left Sidebar -->
+    <aside id="leftsidebar" class="sidebar">
+        <div class="tab-content">
+            <div class="tab-pane stretchRight active" id="dashboard">
+                <div class="menu">
+                    <ul class="list">
+                        <li>
+                            <div class="user-info">
+                                <!--<div class="image"><a asp-controller="Usuario" asp-action="Perfil"><img src="https://ui-avatars.com/api/?name=@nombre&size=128&rounded=true&background=6bbf9a&color=ffffff" alt="User"></a></div>-->
+                                <div class="image"><a asp-controller="Usuario" asp-action="Perfil"><img src="" alt="User"></a></div>
+                                <div class="detail">
+                                    <h4>@nombre</h4>
+                                    <small>@username</small><br />
+                                </div>
+                            </div>
+                        </li>
+                        <li><a asp-controller="Home" asp-action="Index"><i class="fas fa-home text-makler"></i><span>Home</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+    
+    <section class="">
+
+        <div class="block-header mb-3">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <h2>
+                        Reportes de gestión
+                    </h2>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 text-md-right">
+                    <ul class="breadcrumb float-md-right">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index"><i class="zmdi zmdi-home"></i></a></li>
+                        <li class="breadcrumb-item active">Reportes de gestión</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row container-fluid">
+            <div class="col-lg-6 ">
+                <div class="card shadow">
+                    <div class="header p-2">
+                        <h3 class="text-success">Departamento</h3>
+                        <div class="row text-center">
+                            <div class="col-lg-3 col-sm-6 col-6"> 
+                                <h3 class="my-3"><i class="far fa-eye text-makler-warning"></i></h3>
+                                9.999<br>
+                                <b>Visualizaciones</b>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-6">
+                                <h3 class="my-3"><i class="far fa-thumbs-up text-makler"></i></h3> 
+                                9.999<br>
+                                <b>Me gusta</b>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-6">
+                                <h3 class="my-3"><i class="far fa-comment-alt text-makler-danger"></i></h3>  
+                                9.999<br>
+                                <b>Comentarios</b>
+                            </div>
+
+                            
+                            <div class="col-lg-3 col-sm-6 col-6"> 
+                                <h3 class="my-3"><i class="far fa-user text-success"></i></h3> 
+                                9.999<br>
+                                <b>Visitas</b>
+                            </div>
+                        </div>
+                        <div class="header"><h2 class="text-success">Estadisticas en Portal Inmobiliario</h2></div>
+                        
+                        <div class="row text-center">
+                            <div class="col-lg-4"> 
+                                <h3 class="text-makler-warning my-2"><b>99</b></h3>
+                                <b>Cantidad de visitas</b>
+                            </div>
+                            <div class="col-lg-4">
+                                <h3 class="text-makler my-2"><b>99</b></h3>
+                                 <b>Contactos por teléfono</b>
+                                </div>
+                            <div class="col-lg-4"> 
+                                <h3 class="text-makler-danger my-2"><b>99</b></h3>
+                                <b>Cantidad de consultas</b>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="body">
+                                <div id="chart-employment" class="c3_chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="card shadow">
+                    <div class="header p-0">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="table-responsive p-2">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <th>Caracteristica</th>
+                                                <td>Valor</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Caracteristica</th>
+                                                <td>Valor</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Caracteristica</th>
+                                                <td>Valor</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Caracteristica</th>
+                                                <td>Valor</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Caracteristica</th>
+                                                <td>Valor</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Caracteristica</th>
+                                                <td>Valor</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> 
+                            </div>
+                            <div class="col-lg-6">
+                                <img class="w-100" src="https://proki.cl/upload/propiedad/1174/Chiloe-Makler-04252022_104734_20220426102847.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow">
+                    <div class="header p-2">
+                        <div class="header"><h2 class="text-makler"><b>Publicación en los portales</b></h2></div>
+                        
+                        Seleccione un sitio para ver su propiedad.
+                        <div class="row text-center mt-5">
+                            <div class="col-lg-3 col-sm-6 col-6"> 
+                                <a class="" href="mercadolibre.com">
+                                    <div class="">
+                                        <img src="./assets/image/logoMeli.png" class="img-portal">
+                                        <h5 class="my-3 mb-4 text-black">MercadoLibre</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-6">
+                                <a class="" href="mercadolibre.com">
+                                    <div class="">
+                                        <img src="./assets/image/logoGoPlaceIt.png" class="img-portal">
+                                        <h5 class="my-3 mb-4 text-black">GoPlaceIt</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-6">
+                                <a class="" href="mercadolibre.com">
+                                    <div class="">
+                                        <img src="./assets/image/logoEmol.png" class="img-portal my-auto">
+                                        <h5 class="my-3 mb-4 text-black">Emol</h5>
+                                    </div>
+                                </a> 
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-6"> 
+                                <a class="" href="mercadolibre.com">
+                                    <div class="">
+                                        <img src="./assets/image/logoMAKLER.png" class="img-portal">
+                                        <h5 class="my-3 mb-4 text-black">Makler</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header"><h2 class="text-makler"><b>Llamados a la acción</b></h2></div>
+                            Quisiéramos saber si quieres realizar alguna acción respecto a la publicación de la propiedad:
+                        <div class="table-responsive mt-3">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th>Revisión de precio (informe) con tu asesor asignado</th>
+                                        <td><button class="btn btn-sm btn-primary">Solicitar</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Sacar nuevas fotos</th>
+                                        <td><button class="btn btn-sm btn-primary">Solicitar</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Hacer un tour virtual</th>
+                                        <td><button class="btn btn-sm btn-primary">Solicitar</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Renovar publicación</th>
+                                        <td><button class="btn btn-sm btn-primary">Solicitar</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Destacar en portales</th>
+                                        <td><button class="btn btn-sm btn-primary">Solicitar</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</ion-content>
+</body>
+

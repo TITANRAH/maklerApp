@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "volcomApp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
