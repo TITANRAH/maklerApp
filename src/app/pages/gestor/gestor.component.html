@@ -1,57 +1,60 @@
 
 
 
-<title>MAKLER</title>
+
 
 <body class="theme-blue ls-toggle-menu">
-
-    <ion-content>
-    <!-- Overlay For Sidebars -->
-    <div class="overlay"></div>
-
-    <nav class="navbar p-l-5 p-r-5 ">
-        <ul class="nav navbar-nav navbar-left">
-            <li>
-                <div class="navbar-header my-auto">
-                    <a href="#" class="bars"></a>
-                    <a class="navbar-brand ">
-                        <img src="./assets/image/tituloMAKLER.png" class="" width="100" />
-                    </a>
-                </div>
-            </li>
-            <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="fas fa-bars text-makler"></i> <span class="ml-4" >HOLA CRISTOPHER NICOLÁS PINO BARRA</span></a></li>
-
-            <li class="float-right">
-                <a target="_blank" href="https://api.whatsapp.com/send?phone=+56984481396&text=Hola, necesito ayuda con Proki." class="text-success">¿NECESITAS AYUDA?  <i class="ml-1 fab fa-whatsapp"></i></a>
-                <a asp-controller="Account" asp-action="Logout" class="mega-menu" data-close="true"><i class="fas fa-power-off"></i></a>
-            </li>
-        </ul>
-    </nav>
     
-    <!-- Left Sidebar -->
-    <aside id="leftsidebar" class="sidebar">
-        <div class="tab-content">
-            <div class="tab-pane stretchRight active" id="dashboard">
-                <div class="menu">
-                    <ul class="list">
-                        <li>
-                            <div class="user-info">
-                                <!--<div class="image"><a asp-controller="Usuario" asp-action="Perfil"><img src="https://ui-avatars.com/api/?name=@nombre&size=128&rounded=true&background=6bbf9a&color=ffffff" alt="User"></a></div>-->
-                                <div class="image"><a asp-controller="Usuario" asp-action="Perfil"><img src="" alt="User"></a></div>
-                                <div class="detail">
-                                    <h4>@nombre</h4>
-                                    <small>@username</small><br />
+    <ion-header>
+        <div class="overlay"></div>
+    
+        <nav class="navbar p-l-5 p-r-5 ">
+            <ul class="nav navbar-nav navbar-left">
+                <li>
+                    <div class="navbar-header my-auto">
+                        <a href="#" class="bars"></a>
+                        <a class="navbar-brand ">
+                            <img src="./assets/image/tituloMAKLER.png" class="" width="100" />
+                        </a>
+                    </div>
+                </li>
+                <li><a href="javascript:void(0);" class="ls-toggle-btn" data-close="true"><i class="fas fa-bars text-makler"></i> <span class="ml-4" >HOLA CRISTOPHER NICOLÁS PINO BARRA</span></a></li>
+    
+                <li class="float-right">
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+56984481396&text=Hola, necesito ayuda con Proki." class="text-success">¿NECESITAS AYUDA?  <i class="ml-1 fab fa-whatsapp"></i></a>
+                    <a asp-controller="Account" asp-action="Logout" class="mega-menu" data-close="true"><i class="fas fa-power-off"></i></a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <div class="tab-content">
+                <div class="tab-pane stretchRight active" id="dashboard">
+                    <div class="menu">
+                        <ul class="list">
+                            <li>
+                                <div class="user-info">
+                                    <!--<div class="image"><a asp-controller="Usuario" asp-action="Perfil"><img src="https://ui-avatars.com/api/?name=@nombre&size=128&rounded=true&background=6bbf9a&color=ffffff" alt="User"></a></div>-->
+                                    <div class="image"><a asp-controller="Usuario" asp-action="Perfil"><img src="" alt="User"></a></div>
+                                    <div class="detail">
+                                        <h4>@nombre</h4>
+                                        <small>@username</small><br />
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li><a asp-controller="Home" asp-action="Index"><i class="fas fa-home text-makler"></i><span>Home</span></a></li>
-                    </ul>
+                            </li>
+                            <li><a asp-controller="Home" asp-action="Index"><i class="fas fa-home text-makler"></i><span>Home</span></a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-        </div>
-    </aside>
     
+            </div>
+        </aside>
+        
+        
+    </ion-header>
+    <!-- Overlay For Sidebars -->
+    <ion-content>
     <section class="">
 
         <div class="block-header mb-3">
